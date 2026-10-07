@@ -109,14 +109,7 @@ def get_student_count():
 # GET STUDENT BY ID
 # =========================
 
-@app.get("/students/{student_id}")
-def get_student(student_id: int):
-
-    for student in students:
-        if student["id"] == student_id:
-            return {
-                "student": student
-            }
+@
 
     raise HTTPException(
         status_code=404,
