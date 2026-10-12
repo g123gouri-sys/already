@@ -174,11 +174,6 @@ def update_student(
                 "student": existing_student
             }
 
-    raise HTTPException(
-        status_code=404,
-        detail="Student not found"
-    )
-
 
 # =========================
 # DELETE STUDENT
